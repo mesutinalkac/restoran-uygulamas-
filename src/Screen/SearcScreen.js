@@ -23,11 +23,11 @@ const SearcScreen = () => {
       
       />
       {errorMesages  ? <Text> {errorMesages} </Text> :  null}
-      {results.length == 0 ? <Text > ürün bulunamadı...  </Text>
+      {results.length == 0 ? <Text > ürün bulunamadı... deneme  </Text>
       : 
      <>
      <ResultList  title="Ucuz Restorantlar" results={filterPrice("₺")} />
-      <ResultList title="Uygun Restorantlar" results={filterPrice("₺₺")} />
+      <ResultList title="Pahalı Restorantlar" results={filterPrice("₺₺")} />
       
       </> 
       }
